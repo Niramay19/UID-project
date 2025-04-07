@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background: rgba(0, 121, 107, 0.85);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 105, 92, 0.85);
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      transition: transform 0.3s ease;
+    }
+
+    nav a:hover {
+      transform: scale(1.1);
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .project-card h3 {
+      padding: 15px;
+      font-size: 1.2em;
+    }
+
+    .project-card p {
+      padding: 0 15px 15px;
+      font-size: 0.95em;
+      color: #444;
+      flex-grow: 1;
+    }
+
+    .project-card a {
+      display: block;
+      text-align: center;
+      background-color: #004d40;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 0 0 15px 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    .project-card a:hover {
+      background-color: #00695c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(238, 238, 238, 0.9);
+      margin-top: 50px;
+    }
+
+    .footer-icons {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .footer-icons a img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease;
+    }
+
+    .footer-icons a img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Web Portfolio</h1>
+  <p>Simple, Stylish Projects with HTML and CSS</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+  <h2 style="text-align: center; margin-bottom: 20px;">Featured Projects</h2>
+  <div class="projects">
+    <div class="project-card">
+      <img src="https://f1.tokenpost.com/2025/03/6axzp9yty8.jpg" alt="Blockchain Blog">
+      <h3>Blockchain Blog</h3>
+      <p>A blog layout that explores the fundamentals of blockchain technology in a structured and readable format.</p>
+      <a href="project1.html" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600" alt="Restaurant Menu">
+      <h3>Restaurant Menu</h3>
+      <p>A visually appealing food menu showcasing delicious dishes using HTML and CSS.</p>
+      <a href="project2.html" target="_blank">View Project</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><b>&copy; 2025 Niramay Madhav Narayan. All rights reserved.</b></p>
+  <div class="footer-icons">
+    <a href="https://www.linkedin.com/in/niramay-madhav-narayan-93924035a" target="_blank" title="LinkedIn">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon">
+    </a>
+    <a href="https://www.instagram.com/niramay__05?igsh=amh4ZHZwY3d1ZTdv" target="_blank" title="Instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram Icon">
+    </a>
+    <a href="https://github.com/Niramay19" target="_blank" title="GitHub">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Icon">
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>

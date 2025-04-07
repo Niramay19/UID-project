@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Projects</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    header {
+      background-color: rgba(0, 150, 136, 0.9);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    nav {
+      background-color: rgba(0, 121, 107, 0.9);
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #80deea;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2.section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2em;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      animation: fadeIn 1.3s ease-in;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 1.4s ease-in;
+    }
+
+    .project-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.03);
+    }
+
+    .project-card h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #009688;
+    }
+
+    .project-card p {
+      font-size: 0.95em;
+      margin-bottom: 15px;
+      flex-grow: 1;
+    }
+
+    .project-card a {
+      display: block;
+      text-align: center;
+      background-color: #00796b;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: auto;
+      transition: background-color 0.3s ease;
+    }
+
+    .project-card a:hover {
+      background-color: #00695c;
+    }
+
+    footer {
+      background-color: rgba(255, 255, 255, 0.85);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      animation: fadeIn 2s ease-in;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Projects</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+  <h2 class="section-title">Project Showcase</h2>
+  <div class="projects">
+    <div class="project-card">
+      <img src="https://f1.tokenpost.com/2025/03/6axzp9yty8.jpg" alt="Blockchain Blog">
+      <h3>Blog Layout</h3>
+      <p>A clean, responsive blog layout using basic HTML and CSS.</p>
+      <a href="project1.html" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600" alt="Restaurant Menu">
+      <h3>Restaurant Menu</h3>
+      <p>A beautifully designed restaurant menu using simple layout techniques.</p>
+      <a href="project2.html" target="_blank">View Project</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><b>&copy; 2025 Niramay Madhav Narayan. All rights reserved.</b></p>
+</footer>
+
+</body>
+</html>
