@@ -20,11 +20,11 @@ Uid_Project/
 ├── about.html           # About Me page
 ├── contact.html         # Contact information and links
 ├── projects.html        # Displays only Project 1 and Project 2
-├── port1.html           # This portfolio itself
+├── portfolio.html       # This portfolio itself
 ├── project1.html        # Detailed page for Project 1
 ├── project2.html        # Detailed page for Project 2
-├── proj1.css            # Main styling for general pages
-├── proj2.css            # Styling for individual project pages
+├── project1.css         # Main styling for general pages
+├── project2.css         # Styling for individual project pages
 ├── README.md            # Project documentation
 
 ## 🚀 Features
@@ -37,15 +37,15 @@ Uid_Project/
 
 ## 📌 Pages
 
-| Page         | Description                                 |
-|--------------|---------------------------------------------|
-| index.html   | Main homepage. Displays all 3 projects.     |
-| about.html   | Personal introduction and goals.            |
-| projects.html| Showcases Project 1 and Project 2 only.     |
-| contact.html | Provides ways to connect via icons.         |
-| prot1.html   | Showcases this Portfolio itself.            |
-| project1.html| Standalone page for Blockchain Blog project.|
-| project2.html| Standalone page for Restaurant Menu project.|
+|  Page          | Description                                 |
+| -------------- |---------------------------------------------|
+|  index.html    | Main homepage. Displays all 3 projects.     |
+|  about.html    | Personal introduction and goals.            |
+|  projects.html | Showcases Project 1 and Project 2 only.     |
+|  contact.html  | Provides ways to connect via icons.         |
+|  protfolio.html| Showcases this Portfolio itself.            |
+|  project1.html | Standalone page for Blockchain Blog project.|
+|  project2.html | Standalone page for Restaurant Menu project.|
 
 ## 🧾 License
 
