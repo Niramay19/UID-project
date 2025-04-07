@@ -43,6 +43,7 @@ Uid_Project/
 | about.html   | Personal introduction and goals.            |
 | projects.html| Showcases Project 1 and Project 2 only.     |
 | contact.html | Provides ways to connect via icons.         |
+| prot1.html   | Showcases this Portfolio itself.            |
 | project1.html| Standalone page for Blockchain Blog project.|
 | project2.html| Standalone page for Restaurant Menu project.|
 
